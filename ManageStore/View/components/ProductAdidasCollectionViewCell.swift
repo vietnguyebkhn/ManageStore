@@ -8,7 +8,7 @@
 
 import UIKit
 import Nuke
-class ProductAdidasCollectionViewCell: UICollectionViewCell {
+class ProductCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var mProductImage: UIImageView?
     @IBOutlet weak var mProductName: UILabel?
     func setData(data: ShoeVO){

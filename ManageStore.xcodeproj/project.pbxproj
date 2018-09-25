@@ -12,7 +12,7 @@
 		18515C472159D7FE00157386 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18515C462159D7FE00157386 /* ProductService.swift */; };
 		18515C4B2159ECBE00157386 /* CornerViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18515C4A2159ECBE00157386 /* CornerViewEx.swift */; };
 		18515C4F2159F6CC00157386 /* ProductNikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18515C4E2159F6CC00157386 /* ProductNikeTableViewCell.swift */; };
-		189F883A2159491800A11DA2 /* ProductAdidasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F88382159491800A11DA2 /* ProductAdidasTableViewCell.swift */; };
+		189F883A2159491800A11DA2 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F88382159491800A11DA2 /* ProductTableViewCell.swift */; };
 		189F884021594D6E00A11DA2 /* ProductAdidasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F883F21594D6E00A11DA2 /* ProductAdidasCollectionViewCell.swift */; };
 		189F8843215950BA00A11DA2 /* ShoeVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F8842215950BA00A11DA2 /* ShoeVO.swift */; };
 		189F88452159566500A11DA2 /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F88442159566500A11DA2 /* ProductTableViewController.swift */; };
@@ -50,7 +50,7 @@
 		18515C462159D7FE00157386 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		18515C4A2159ECBE00157386 /* CornerViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerViewEx.swift; sourceTree = "<group>"; };
 		18515C4E2159F6CC00157386 /* ProductNikeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNikeTableViewCell.swift; sourceTree = "<group>"; };
-		189F88382159491800A11DA2 /* ProductAdidasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAdidasTableViewCell.swift; sourceTree = "<group>"; };
+		189F88382159491800A11DA2 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		189F883F21594D6E00A11DA2 /* ProductAdidasCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAdidasCollectionViewCell.swift; sourceTree = "<group>"; };
 		189F8842215950BA00A11DA2 /* ShoeVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeVO.swift; sourceTree = "<group>"; };
 		189F88442159566500A11DA2 /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		189F8837215948EF00A11DA2 /* components */ = {
 			isa = PBXGroup;
 			children = (
-				189F88382159491800A11DA2 /* ProductAdidasTableViewCell.swift */,
+				189F88382159491800A11DA2 /* ProductTableViewCell.swift */,
 				189F883F21594D6E00A11DA2 /* ProductAdidasCollectionViewCell.swift */,
 				18515C4E2159F6CC00157386 /* ProductNikeTableViewCell.swift */,
 			);
@@ -472,7 +472,7 @@
 				18515C4F2159F6CC00157386 /* ProductNikeTableViewCell.swift in Sources */,
 				189F8843215950BA00A11DA2 /* ShoeVO.swift in Sources */,
 				18515C4B2159ECBE00157386 /* CornerViewEx.swift in Sources */,
-				189F883A2159491800A11DA2 /* ProductAdidasTableViewCell.swift in Sources */,
+				189F883A2159491800A11DA2 /* ProductTableViewCell.swift in Sources */,
 				A8BEB7952158D4DE0025BC94 /* ManageStore.xcdatamodeld in Sources */,
 				189F884021594D6E00A11DA2 /* ProductAdidasCollectionViewCell.swift in Sources */,
 				189F88452159566500A11DA2 /* ProductTableViewController.swift in Sources */,
