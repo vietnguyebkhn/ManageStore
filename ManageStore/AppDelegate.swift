@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import Firebase
+import FirebaseDatabase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,13 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        if let launchOptions = launchOptions {
-            if #available(iOS 9.0, *) {
-                if let shortcutItem = launchOptions[UIApplicationLaunchOptionsKey.shortcutItem] as? UIApplicationShortcutItem {
-                    print("Shortcut: \(shortcutItem)")
-                }
-            }
-        }
+        FirebaseApp.configure()
         return true
     }
 
