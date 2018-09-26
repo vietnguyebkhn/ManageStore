@@ -13,10 +13,7 @@ class ShoeVO{
     var price: Int
     var albumImage: [String]
     var representImage: String
-    var description: String
-    var size: Int = 1
     var shoeId: Int = 0
-    var shoeCount: Int = 1
     var brandID: Int!
     
     
@@ -38,15 +35,16 @@ class ShoeVO{
     
     
     
+    
     init(shoeDictionary: [String:AnyObject]) {
         name = shoeDictionary[ShoeKeys.name] as? String ?? ""
         price = shoeDictionary[ShoeKeys.price] as? Int ?? 0
         albumImage = shoeDictionary[ShoeKeys.albumImage] as? [String]  ?? [""]
         
         representImage = shoeDictionary[ShoeKeys.representImage] as? String ?? ""
-        description = shoeDictionary[ShoeKeys.description] as? String ?? ""
+//        description = shoeDictionary[ShoeKeys.description] as? String ?? ""
         //        shoeId = shoeDictionary[ShoeKeys.size] as? Int ?? 0
-        shoeId = shoeDictionary[ShoeKeys.shoeId] as? Int ?? 0
+//        shoeId = shoeDictionary[ShoeKeys.shoeId] as? Int ?? 0
         brandID = shoeDictionary[ShoeKeys.brandID] as? Int ?? 0
         //        shoeCount = (shoeDictionary[ShoeKeys.shoeCount] as? Int) ?? 1
         

@@ -76,7 +76,7 @@ extension ProductTableViewController{
         }
     }
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        (view as! UITableViewHeaderFooterView).backgroundView?.backgroundColor = UIColor(red: 5/255.0, green: 140/255.0, blue: 255/255.0, alpha: 1.0).withAlphaComponent(0.7)
+        (view as! UITableViewHeaderFooterView).backgroundView?.backgroundColor = UIColor(red: 5/255.0, green: 140/255.0, blue: 255/255.0, alpha: 1.0).withAlphaComponent(0.5)
         
     }
         
