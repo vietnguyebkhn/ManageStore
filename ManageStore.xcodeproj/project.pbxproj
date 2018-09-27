@@ -23,6 +23,7 @@
 		180C3200215B954500D69767 /* Pods_ManageStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C31FF215B954500D69767 /* Pods_ManageStore.framework */; };
 		180C3202215B954500D69767 /* Pods_ManageStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C3201215B954500D69767 /* Pods_ManageStoreTests.framework */; };
 		180C3204215B954500D69767 /* Pods_ManageStoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C3203215B954500D69767 /* Pods_ManageStoreUITests.framework */; };
+		18230AD4215C87A300E277D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C309F215B93C400D69767 /* AVFoundation.framework */; };
 		18515C432159D58C00157386 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18515C422159D58C00157386 /* GoogleService-Info.plist */; };
 		18515C472159D7FE00157386 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18515C462159D7FE00157386 /* ProductService.swift */; };
 		18515C4B2159ECBE00157386 /* CornerViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18515C4A2159ECBE00157386 /* CornerViewEx.swift */; };
@@ -420,6 +421,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18230AD4215C87A300E277D2 /* AVFoundation.framework in Frameworks */,
 				180C31E8215B954500D69767 /* Alamofire.framework in Frameworks */,
 				180C31EA215B954500D69767 /* Bolts.framework in Frameworks */,
 				180C31EC215B954500D69767 /* FBSDKCoreKit.framework in Frameworks */,

@@ -5,13 +5,15 @@
 //  Created by Apple on 9/26/18.
 //  Copyright © 2018 Việt Nguyễn. All rights reserved.
 //
-
+import AVFoundation
 import UIKit
 import Photos
 import BSImagePicker
+import FirebaseDatabase
+import Firebase
 
-class AddProductViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDelegate, UIImagePickerControllerDelegate{
-   
+class AddProductViewController: UIViewController, UIImagePickerControllerDelegate {
+    
     
     
     
@@ -28,6 +30,8 @@ class AddProductViewController: UIViewController, UIPickerViewDataSource,UIPicke
     var selectedAssets = [PHAsset]()
     var photoArray = [UIImage]()
     var imagePresenter : ImagePresenter!
+    var shoeProduct: ShoeVO!
+    static var pickerString: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,23 +89,72 @@ class AddProductViewController: UIViewController, UIPickerViewDataSource,UIPicke
     
     
     @IBAction func onSaveButtonTouch(_ sender: Any) {
+        if mProductNameTextField.text != nil && mPriceTextField.text != nil{
+            var ref: DatabaseReference!
+            ref = Database.database().reference()
+            let productName = mProductNameTextField.text
+            let productPrice = Int(mPriceTextField.text!)
+            let newProductDict =
+                [
+                    "name": productName,
+                    "price": productPrice
+                    
+                    
+                    ] as [String : Any]
+            print(AddProductViewController.pickerString)
+
+            switch(AddProductViewController.pickerString){
+            case "Adidas":
+                let key = ref.child("adidas").childByAutoId().key
+                let childSetValue = ["/adidas/\(key)": newProductDict]
+                ref.updateChildValues(childSetValue)
+                break;
+            case "Nike":
+                let key = ref.child("nike").childByAutoId().key
+                let childSetValue = ["/nike/\(key)": newProductDict]
+                ref.updateChildValues(childSetValue)
+                break;
+            case "Jordan":
+                let key = ref.child("jordan").childByAutoId().key
+                let childSetValue = ["/jordan/\(key)": newProductDict]
+                ref.updateChildValues(childSetValue)
+                break;
+
+            default:
+                break;
+                
+            }
+        
+        }
     }
     
    
+
+
+   
+}
+
+extension AddProductViewController: UIPickerViewDataSource,UIPickerViewDelegate {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-         return 1
+        return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return brand.count
     }
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        if row == 0 {
+            AddProductViewController.pickerString = brand[0]
+        }
         let titleData = brand[row]
         let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedStringKey.foregroundColor: UIColor(red: 12/255.0, green: 175/255.0, blue: 255/255, alpha: 1)])
         
         return myTitle
     }
-
-   
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        AddProductViewController.pickerString = brand[row]
+        print(AddProductViewController.pickerString)
+    }
 }
