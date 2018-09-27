@@ -13,6 +13,16 @@
 		189F8843215950BA00A11DA2 /* ShoeVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F8842215950BA00A11DA2 /* ShoeVO.swift */; };
 		9105D07F0074DD7AAE59AA4D /* Pods_ManageStoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26882E120D773924ED64DB95 /* Pods_ManageStoreUITests.framework */; };
 		A81132A4215CC1BD000AA6DA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81132A3215CC1BD000AA6DA /* DetailViewController.swift */; };
+		A81132A8215CF97E000AA6DA /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81132A5215CF97E000AA6DA /* ProductTableViewController.swift */; };
+		A81132A9215CF97E000AA6DA /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81132A6215CF97E000AA6DA /* AddProductViewController.swift */; };
+		A81132AA215CF97E000AA6DA /* ImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81132A7215CF97E000AA6DA /* ImagePresenter.swift */; };
+		A81132AD215CF989000AA6DA /* CountVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81132AB215CF989000AA6DA /* CountVO.swift */; };
+		A81132AE215CF989000AA6DA /* SizeVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81132AC215CF989000AA6DA /* SizeVO.swift */; };
+		A81132B3215CF9AA000AA6DA /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A81132AF215CF9A9000AA6DA /* ProductTableViewCell.xib */; };
+		A81132B4215CF9AA000AA6DA /* UploadImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81132B0215CF9A9000AA6DA /* UploadImageCollectionViewCell.swift */; };
+		A81132B5215CF9AA000AA6DA /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81132B1215CF9AA000AA6DA /* ProductTableViewCell.swift */; };
+		A81132B6215CF9AA000AA6DA /* ProductAdidasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81132B2215CF9AA000AA6DA /* ProductAdidasCollectionViewCell.swift */; };
+		A81132B9215CF9E9000AA6DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81132B7215CF9E8000AA6DA /* Main.storyboard */; };
 		A82A581D215B6496007F4BEE /* DetailOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82A581B215B6496007F4BEE /* DetailOrderTableViewCell.swift */; };
 		A82A581E215B6496007F4BEE /* DetailOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A82A581C215B6496007F4BEE /* DetailOrderTableViewCell.xib */; };
 		A82A5820215B6CCD007F4BEE /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82A581F215B6CCD007F4BEE /* Formatter.swift */; };
@@ -26,7 +36,6 @@
 		A895A8B0215A2B2700BEF15F /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A895A8AF215A2B2700BEF15F /* Util.swift */; };
 		A8BEB78D2158D4DE0025BC94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BEB78C2158D4DE0025BC94 /* AppDelegate.swift */; };
 		A8BEB78F2158D4DE0025BC94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BEB78E2158D4DE0025BC94 /* ViewController.swift */; };
-		A8BEB7922158D4DE0025BC94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8BEB7902158D4DE0025BC94 /* Main.storyboard */; };
 		A8BEB7952158D4DE0025BC94 /* ManageStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8BEB7932158D4DE0025BC94 /* ManageStore.xcdatamodeld */; };
 		A8BEB7972158D4DF0025BC94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8BEB7962158D4DF0025BC94 /* Assets.xcassets */; };
 		A8BEB79A2158D4DF0025BC94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8BEB7982158D4DF0025BC94 /* LaunchScreen.storyboard */; };
@@ -63,6 +72,16 @@
 		A188731682F389C733E461B7 /* Pods-ManageStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManageStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-ManageStore/Pods-ManageStore.release.xcconfig"; sourceTree = "<group>"; };
 		A3366212E1C89EA5866E6DA9 /* Pods-ManageStoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManageStoreUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ManageStoreUITests/Pods-ManageStoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A81132A3215CC1BD000AA6DA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A81132A5215CF97E000AA6DA /* ProductTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
+		A81132A6215CF97E000AA6DA /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		A81132A7215CF97E000AA6DA /* ImagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePresenter.swift; sourceTree = "<group>"; };
+		A81132AB215CF989000AA6DA /* CountVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountVO.swift; sourceTree = "<group>"; };
+		A81132AC215CF989000AA6DA /* SizeVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeVO.swift; sourceTree = "<group>"; };
+		A81132AF215CF9A9000AA6DA /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		A81132B0215CF9A9000AA6DA /* UploadImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		A81132B1215CF9AA000AA6DA /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		A81132B2215CF9AA000AA6DA /* ProductAdidasCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductAdidasCollectionViewCell.swift; sourceTree = "<group>"; };
+		A81132B8215CF9E8000AA6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A82A581B215B6496007F4BEE /* DetailOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOrderTableViewCell.swift; sourceTree = "<group>"; };
 		A82A581C215B6496007F4BEE /* DetailOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailOrderTableViewCell.xib; sourceTree = "<group>"; };
 		A82A581F215B6CCD007F4BEE /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
@@ -76,7 +95,6 @@
 		A8BEB7892158D4DE0025BC94 /* ManageStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManageStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8BEB78C2158D4DE0025BC94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8BEB78E2158D4DE0025BC94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A8BEB7912158D4DE0025BC94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8BEB7942158D4DE0025BC94 /* ManageStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ManageStore.xcdatamodel; sourceTree = "<group>"; };
 		A8BEB7962158D4DF0025BC94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8BEB7992158D4DF0025BC94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -149,8 +167,8 @@
 		189F88362159472600A11DA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A81132B7215CF9E8000AA6DA /* Main.storyboard */,
 				189F8837215948EF00A11DA2 /* components */,
-				A8BEB7902158D4DE0025BC94 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,6 +176,10 @@
 		189F8837215948EF00A11DA2 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				A81132B2215CF9AA000AA6DA /* ProductAdidasCollectionViewCell.swift */,
+				A81132B1215CF9AA000AA6DA /* ProductTableViewCell.swift */,
+				A81132AF215CF9A9000AA6DA /* ProductTableViewCell.xib */,
+				A81132B0215CF9A9000AA6DA /* UploadImageCollectionViewCell.swift */,
 				A895A8A8215A1D7B00BEF15F /* OderItemManagementTableViewCell.swift */,
 				A895A8A9215A1D7B00BEF15F /* OderItemManagementTableViewCell.xib */,
 				A82A581B215B6496007F4BEE /* DetailOrderTableViewCell.swift */,
@@ -169,6 +191,9 @@
 		189F883C2159493900A11DA2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A81132A6215CF97E000AA6DA /* AddProductViewController.swift */,
+				A81132A7215CF97E000AA6DA /* ImagePresenter.swift */,
+				A81132A5215CF97E000AA6DA /* ProductTableViewController.swift */,
 				A895A8A6215A1D1F00BEF15F /* OderManagementViewController.swift */,
 				A81132A3215CC1BD000AA6DA /* DetailViewController.swift */,
 			);
@@ -178,6 +203,8 @@
 		189F8841215950A200A11DA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A81132AB215CF989000AA6DA /* CountVO.swift */,
+				A81132AC215CF989000AA6DA /* SizeVO.swift */,
 				189F8842215950BA00A11DA2 /* ShoeVO.swift */,
 				A895A8AC215A275A00BEF15F /* OrderVO.swift */,
 				A82A5821215B7A29007F4BEE /* DetailVO.swift */,
@@ -374,12 +401,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81132B9215CF9E9000AA6DA /* Main.storyboard in Resources */,
 				A895A8AB215A1D7B00BEF15F /* OderItemManagementTableViewCell.xib in Resources */,
 				A82A581E215B6496007F4BEE /* DetailOrderTableViewCell.xib in Resources */,
 				A8BEB79A2158D4DF0025BC94 /* LaunchScreen.storyboard in Resources */,
+				A81132B3215CF9AA000AA6DA /* ProductTableViewCell.xib in Resources */,
 				A895A8A5215A1A3500BEF15F /* GoogleService-Info.plist in Resources */,
 				A8BEB7972158D4DF0025BC94 /* Assets.xcassets in Resources */,
-				A8BEB7922158D4DE0025BC94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,17 +523,25 @@
 			files = (
 				A895A8AD215A275A00BEF15F /* OrderVO.swift in Sources */,
 				A8BEB78F2158D4DE0025BC94 /* ViewController.swift in Sources */,
+				A81132B6215CF9AA000AA6DA /* ProductAdidasCollectionViewCell.swift in Sources */,
+				A81132B5215CF9AA000AA6DA /* ProductTableViewCell.swift in Sources */,
+				A81132AE215CF989000AA6DA /* SizeVO.swift in Sources */,
+				A81132A9215CF97E000AA6DA /* AddProductViewController.swift in Sources */,
 				A895A8AA215A1D7B00BEF15F /* OderItemManagementTableViewCell.swift in Sources */,
 				A82A581D215B6496007F4BEE /* DetailOrderTableViewCell.swift in Sources */,
+				A81132A8215CF97E000AA6DA /* ProductTableViewController.swift in Sources */,
 				A895A8A7215A1D1F00BEF15F /* OderManagementViewController.swift in Sources */,
 				18515C472159D7FE00157386 /* ProductService.swift in Sources */,
 				A82A5820215B6CCD007F4BEE /* Formatter.swift in Sources */,
 				189F8843215950BA00A11DA2 /* ShoeVO.swift in Sources */,
 				18515C4B2159ECBE00157386 /* CornerViewEx.swift in Sources */,
+				A81132AA215CF97E000AA6DA /* ImagePresenter.swift in Sources */,
 				A82A5822215B7A29007F4BEE /* DetailVO.swift in Sources */,
 				A8BEB7952158D4DE0025BC94 /* ManageStore.xcdatamodeld in Sources */,
 				A895A8B0215A2B2700BEF15F /* Util.swift in Sources */,
 				A8BEB78D2158D4DE0025BC94 /* AppDelegate.swift in Sources */,
+				A81132B4215CF9AA000AA6DA /* UploadImageCollectionViewCell.swift in Sources */,
+				A81132AD215CF989000AA6DA /* CountVO.swift in Sources */,
 				A81132A4215CC1BD000AA6DA /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,10 +578,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A8BEB7902158D4DE0025BC94 /* Main.storyboard */ = {
+		A81132B7215CF9E8000AA6DA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A8BEB7912158D4DE0025BC94 /* Base */,
+				A81132B8215CF9E8000AA6DA /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
