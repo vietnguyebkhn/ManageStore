@@ -12,7 +12,6 @@ pod 'FBSDKLoginKit'
 pod 'Nuke', '~> 7.0'
 pod 'BSImagePicker','~> 2.4'
 
-  # Pods for ManageStore
 
   target 'ManageStoreTests' do
     inherit! :search_paths
