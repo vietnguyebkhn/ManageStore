@@ -31,9 +31,8 @@ class ProductService{
 //        }
         
     }
-    
-    
-    static func getNikeData(completion: @escaping ([ShoeVO?]) -> Void){
+
+    static func getNikeData(completion: @escaping ([ShoeVO]?) -> Void){
 //        DispatchQueue.global().async {
             var ref: DatabaseReference!
             ref = Database.database().reference()
@@ -48,6 +47,20 @@ class ProductService{
                 }
             })
 //        }
+    }
+    static func getJordanData(completion: @escaping ([ShoeVO?]) -> Void){
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        ref.child("jordan").observeSingleEvent(of: .value) { (snapshot) in
+            if let data = snapshot.value as? [[String:AnyObject]]{
+                var arrProductJordan = [ShoeVO]()
+                for item in data{
+                    let productJordanData = ShoeVO(shoeDictionary: item)
+                    arrProductJordan.append(productJordanData)
+                }
+                completion(arrProductJordan)
+            }
+        }
     }
     
     static func getDetailOrder(key: String, completion: @escaping(_ resData: [OrderVO?]) -> Void) {
