@@ -131,7 +131,7 @@
                     <navigationItem key="navigationItem" title="Quản lý sản phẩm" id="q8Y-3m-dtI">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="AXR-33-HzA">
                             <connections>
-                                <segue destination="zxf-dH-Q5s" kind="show" id="1en-Pa-L8g"/>
+                                <segue destination="zxf-dH-Q5s" kind="show" identifier="ToAddProduct" id="1en-Pa-L8g"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

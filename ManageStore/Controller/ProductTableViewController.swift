@@ -26,6 +26,7 @@ class ProductTableViewController: UITableViewController {
         static let productJordanCell = "ProductJordanCell"
 
         static let collectionProductCell = "CollectionProductCell"
+        static let segueToAddProduct = "ToAddProduct"
     }
 
     override func viewDidLoad() {
@@ -33,6 +34,15 @@ class ProductTableViewController: UITableViewController {
         requestData()
 
         
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == StoryBoard.segueToAddProduct{
+            if let addProductVC = segue.destination as? AddProductViewController {
+                addProductVC.mShoeVOsAdidas = self.mShoeVOsAdidas
+                addProductVC.mShoeVOsNike = self.mShoeVOsNike
+                addProductVC.mShoeVOsJordan = self.mShoeVOsJordan
+            }
+        }
     }
     func requestData(){
         ProductService.getAdidasData { (arrProduct) in
@@ -122,59 +132,4 @@ extension ProductTableViewController{
         return 178
     }
     
-//   override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//  if indexPath.row == 0 {
-//    if let cellAdidas = cell as? ProductTableViewCell{
-//        cellAdidas.mProductAdidasCollectionView.dataSource = self
-//        cellAdidas.mProductAdidasCollectionView.reloadData()
-//
-//    }
-//
-//    }
-//    if indexPath.row == 1 {
-//        if let cellNike = cell as? ProductTableViewCell{
-//            cellNike.mProductNikeCollectionView.dataSource = self
-//            cellNike.mProductNikeCollectionView.reloadData()
-//
-//        }
-//
-//    }
-//    if indexPath.row == 2 {
-//        if let cellJordan = cell as? ProductTableViewCell{
-//            cellJordan.mProductJordanCollectionView.dataSource = self
-//            cellJordan.mProductJordanCollectionView.reloadData()
-//
-//        }
-//
-//    }
-//
-//
-//    }
-    
-    
-    }
-//extension ProductTableViewController: UICollectionViewDataSource{
-//   
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        
-//        return mShoeVOsAdidas.count
-//    }
-//    
-//    
-//    
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StoryBoard.collectionProductCell, for: indexPath) as? ProductAdidasCollectionViewCell
-//        cell?.mProductName?.text = mShoeVOsAdidas[indexPath.row].name
-//        cell?.setData(data: mShoeVOsAdidas[indexPath.row])
-//        
-//        return cell!
-//        
-//    }
-//    
-//    
-//}
-
-
-
-
-
+}

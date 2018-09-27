@@ -31,6 +31,9 @@ class AddProductViewController: UIViewController, UIImagePickerControllerDelegat
     var photoArray = [UIImage]()
     var imagePresenter : ImagePresenter!
     var shoeProduct: ShoeVO!
+    var mShoeVOsAdidas = [ShoeVO]()
+    var mShoeVOsNike = [ShoeVO]()
+    var mShoeVOsJordan = [ShoeVO]()
     static var pickerString: String!
 
     override func viewDidLoad() {
@@ -39,6 +42,7 @@ class AddProductViewController: UIViewController, UIImagePickerControllerDelegat
         mImageCollectionView.dataSource = imagePresenter
         mImageCollectionView.delegate = imagePresenter
         mImageCollectionView.reloadData()
+        print("count:\(mShoeVOsJordan.count)")
     }
     override func viewWillAppear(_ animated: Bool) {
         mImageCollectionView.reloadData()
@@ -105,8 +109,8 @@ class AddProductViewController: UIViewController, UIImagePickerControllerDelegat
 
             switch(AddProductViewController.pickerString){
             case "Adidas":
-                let key = ref.child("adidas").childByAutoId().key
-                let childSetValue = ["/adidas/\(key)": newProductDict]
+//                let key = ref.child("adidas")
+                let childSetValue = ["/adidas/\(self.mShoeVOsAdidas.count)": newProductDict]
                 ref.updateChildValues(childSetValue)
                 break;
             case "Nike":
