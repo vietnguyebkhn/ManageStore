@@ -41,6 +41,7 @@
 		A8BEB79A2158D4DF0025BC94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8BEB7982158D4DF0025BC94 /* LaunchScreen.storyboard */; };
 		A8BEB7A52158D4DF0025BC94 /* ManageStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BEB7A42158D4DF0025BC94 /* ManageStoreTests.swift */; };
 		A8BEB7B02158D4DF0025BC94 /* ManageStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BEB7AF2158D4DF0025BC94 /* ManageStoreUITests.swift */; };
+		A8CACD282162332F006321D8 /* ManageOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CACD272162332F006321D8 /* ManageOrder.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		A8BEB7AB2158D4DF0025BC94 /* ManageStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManageStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8BEB7AF2158D4DF0025BC94 /* ManageStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageStoreUITests.swift; sourceTree = "<group>"; };
 		A8BEB7B12158D4DF0025BC94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8CACD272162332F006321D8 /* ManageOrder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ManageOrder.storyboard; sourceTree = "<group>"; };
 		BB8CAF2E3F94CCB00847A01B /* Pods-ManageStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManageStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ManageStore/Pods-ManageStore.debug.xcconfig"; sourceTree = "<group>"; };
 		CA31ADE70944BC3C37670944 /* Pods_ManageStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ManageStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -167,6 +169,7 @@
 		189F88362159472600A11DA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A8CACD272162332F006321D8 /* ManageOrder.storyboard */,
 				A81132B7215CF9E8000AA6DA /* Main.storyboard */,
 				189F8837215948EF00A11DA2 /* components */,
 			);
@@ -403,6 +406,7 @@
 			files = (
 				A81132B9215CF9E9000AA6DA /* Main.storyboard in Resources */,
 				A895A8AB215A1D7B00BEF15F /* OderItemManagementTableViewCell.xib in Resources */,
+				A8CACD282162332F006321D8 /* ManageOrder.storyboard in Resources */,
 				A82A581E215B6496007F4BEE /* DetailOrderTableViewCell.xib in Resources */,
 				A8BEB79A2158D4DF0025BC94 /* LaunchScreen.storyboard in Resources */,
 				A81132B3215CF9AA000AA6DA /* ProductTableViewCell.xib in Resources */,
