@@ -10,9 +10,23 @@ import Foundation
 import UIKit
 import FirebaseDatabase
 import SystemConfiguration
+import Firebase
 
 
 class Utils {
+    
+    static func checkLogin() -> Bool {
+        var Stt = Bool()
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if let users = user {
+                Stt = true
+            } else {
+                Stt = false
+            }
+       
+    }
+         return Stt
+    }
     
     static func isConnectedToNetwork() -> Bool {
         

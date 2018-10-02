@@ -27,6 +27,8 @@
 		A82A581E215B6496007F4BEE /* DetailOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A82A581C215B6496007F4BEE /* DetailOrderTableViewCell.xib */; };
 		A82A5820215B6CCD007F4BEE /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82A581F215B6CCD007F4BEE /* Formatter.swift */; };
 		A82A5822215B7A29007F4BEE /* DetailVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82A5821215B7A29007F4BEE /* DetailVO.swift */; };
+		A88937732163626000531B7D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88937722163626000531B7D /* LoginViewController.swift */; };
+		A8893776216367AF00531B7D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8893775216367AF00531B7D /* Login.storyboard */; };
 		A88D835945D5B7751E116C41 /* Pods_ManageStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72BD8E5200A4A80A0472E2B6 /* Pods_ManageStoreTests.framework */; };
 		A895A8A5215A1A3500BEF15F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A895A8A4215A1A3500BEF15F /* GoogleService-Info.plist */; };
 		A895A8A7215A1D1F00BEF15F /* OderManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A895A8A6215A1D1F00BEF15F /* OderManagementViewController.swift */; };
@@ -87,6 +89,8 @@
 		A82A581C215B6496007F4BEE /* DetailOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailOrderTableViewCell.xib; sourceTree = "<group>"; };
 		A82A581F215B6CCD007F4BEE /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		A82A5821215B7A29007F4BEE /* DetailVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVO.swift; sourceTree = "<group>"; };
+		A88937722163626000531B7D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A8893775216367AF00531B7D /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A895A8A4215A1A3500BEF15F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A895A8A6215A1D1F00BEF15F /* OderManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OderManagementViewController.swift; sourceTree = "<group>"; };
 		A895A8A8215A1D7B00BEF15F /* OderItemManagementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OderItemManagementTableViewCell.swift; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 		189F88362159472600A11DA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A8893775216367AF00531B7D /* Login.storyboard */,
 				A8CACD272162332F006321D8 /* ManageOrder.storyboard */,
 				A81132B7215CF9E8000AA6DA /* Main.storyboard */,
 				189F8837215948EF00A11DA2 /* components */,
@@ -199,6 +204,7 @@
 				A81132A5215CF97E000AA6DA /* ProductTableViewController.swift */,
 				A895A8A6215A1D1F00BEF15F /* OderManagementViewController.swift */,
 				A81132A3215CC1BD000AA6DA /* DetailViewController.swift */,
+				A88937722163626000531B7D /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -412,6 +418,7 @@
 				A81132B3215CF9AA000AA6DA /* ProductTableViewCell.xib in Resources */,
 				A895A8A5215A1A3500BEF15F /* GoogleService-Info.plist in Resources */,
 				A8BEB7972158D4DF0025BC94 /* Assets.xcassets in Resources */,
+				A8893776216367AF00531B7D /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +535,7 @@
 				A895A8AD215A275A00BEF15F /* OrderVO.swift in Sources */,
 				A8BEB78F2158D4DE0025BC94 /* ViewController.swift in Sources */,
 				A81132B6215CF9AA000AA6DA /* ProductAdidasCollectionViewCell.swift in Sources */,
+				A88937732163626000531B7D /* LoginViewController.swift in Sources */,
 				A81132B5215CF9AA000AA6DA /* ProductTableViewCell.swift in Sources */,
 				A81132AE215CF989000AA6DA /* SizeVO.swift in Sources */,
 				A81132A9215CF97E000AA6DA /* AddProductViewController.swift in Sources */,
