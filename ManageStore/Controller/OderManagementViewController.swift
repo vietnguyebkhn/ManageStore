@@ -14,7 +14,7 @@ class OderManagementViewController: UIViewController, UITableViewDelegate, UITab
     @IBOutlet weak var mTableView: UITableView!
     var dataOrder = [OrderVO]()
     var sortDataOrder = [OrderVO]()
-    var activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+    var activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
     
     func RequestGetDataOrder() {
         ProductService.getInfoOrder{[weak self] (dataResponse) in
@@ -52,7 +52,7 @@ class OderManagementViewController: UIViewController, UITableViewDelegate, UITab
         return true
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath)
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
     {
         if editingStyle == .delete
         {

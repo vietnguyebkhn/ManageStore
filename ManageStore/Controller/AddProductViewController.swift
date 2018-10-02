@@ -78,8 +78,8 @@ class AddProductViewController: UIViewController, UIImagePickerControllerDelegat
                 manager.requestImage(for: selectedAssets[i], targetSize: CGSize(width: 240, height: 128), contentMode: .aspectFill, options: option, resultHandler: { (result, info) in
                     thumnail = result!
                 })
-                let data = UIImage.jpegData(thumnail) //JPEGRepresentation(thumnail, 1)
-                let newImage = UIImage(data: data)
+                let data = UIImageJPEGRepresentation(thumnail, 1)
+                let newImage = UIImage(data: data!)
                 self.photoArray.append(newImage! as UIImage)
                 imagePresenter.add(image: newImage!)
                 DispatchQueue.main.sync {
@@ -152,7 +152,7 @@ extension AddProductViewController: UIPickerViewDataSource,UIPickerViewDelegate 
             AddProductViewController.pickerString = brand[0]
         }
         let titleData = brand[row]
-        let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedString.Key.foregroundColor: UIColor(red: 12/255.0, green: 175/255.0, blue: 255/255, alpha: 1)])
+        let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedStringKey.foregroundColor: UIColor(red: 12/255.0, green: 175/255.0, blue: 255/255, alpha: 1)])
         
         return myTitle
     }
