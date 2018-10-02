@@ -7,7 +7,25 @@
 		<key>ManageStore.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>19</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A8BEB7882158D4DE0025BC94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A8BEB79F2158D4DF0025BC94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A8BEB7AA2158D4DF0025BC94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

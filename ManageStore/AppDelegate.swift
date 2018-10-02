@@ -17,8 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        if Utils.checkLogin() {
+             window?.rootViewController = UIStoryboard.init(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "Login")
+        } else {
+            window?.rootViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UITabBarController-LIJ-yF-sd1")
+        }
         return true
     }
 
